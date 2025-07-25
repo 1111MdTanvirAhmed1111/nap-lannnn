@@ -1,0 +1,28 @@
+.card-wrapper {
+    width: 100%;
+    max-width: 390px;
+    filter: drop-shadow(0 4px 14.2px rgba(0, 0, 0, 0.1));
+    transition: filter 0.3s ease;
+}
+
+.card {
+    width: 100%;
+    height: 330px;
+    max-height: fit-content;
+    aspect-ratio: 424 / 358;
+    transition: filter 0.3s ease;
+    display: block;
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
