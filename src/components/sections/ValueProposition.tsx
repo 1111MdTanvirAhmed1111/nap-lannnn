@@ -98,7 +98,7 @@ const ValueProposition = () => {
                     <img
                          src="/images/value-img-2.png"
                          alt="Value Proposition 2"
-                         className="w-40 sm:w-48 lg:w-60 h-auto max-sm:-translate-y-[75%] max-sm:translate-x-[40%] max-sm:scale-[0.3]"
+                         className="w-40 sm:w-48 lg:w-60 h-auto max-sm:-translate-y-[75%] max-sm:translate-x-[60%] max-sm:scale-[0.3]"
                     />
                </motion.div>
           </motion.section>
