@@ -42,7 +42,6 @@ const HowItWorks = () => {
       imageSrc: "/images/howitworks/1.png",
       imgBg: "bg-[#A15BA8]",
       btnCls: "bg-[#E6700B]",
-      position: "md:mt-[185px] md:-ml-[30px]",
     },
     {
       id: 2,
@@ -51,7 +50,6 @@ const HowItWorks = () => {
       imageSrc: "/images/howitworks/2.png",
       imgBg: "bg-[#23D581]",
       btnVariant: "blue",
-      position: "md:mt-[148px] md:-ml-[30px]",
     },
     {
       id: 3,
@@ -61,7 +59,6 @@ const HowItWorks = () => {
       imgBg: "bg-[#E6700B]",
       btnVariant: "yellow",
       btnCls: "bg-[#F0C20A]",
-      position: "md:mt-[228px] md:-ml-[30px]",
     },
     {
       id: 4,
@@ -71,7 +68,6 @@ const HowItWorks = () => {
       imgBg: "bg-[#8056FF]",
       btnVariant: "red",
       btnCls: "bg-[#FF7777]",
-      position: "md:mt-[48px] md:-ml-[30px]",
     },
   ];
 
@@ -107,14 +103,14 @@ const HowItWorks = () => {
         </motion.p>
 
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-fit mx-auto"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-10 w-full justify-items-center"
           variants={containerVariants}
         >
           {steps.map((step) => (
             <motion.div
               key={step.id}
               variants={itemVariants}
-              className="w-full max-w-[280px] mx-auto md:max-w-[250px] max-sm:my-7"
+              className="w-full max-w-[280px] mx-auto"
             >
               <HIWCard
                 title={step.title}
@@ -123,7 +119,6 @@ const HowItWorks = () => {
                 imgBg={step.imgBg}
                 index={step.id}
                 btnCls={step.btnCls || ""}
-                position={step.position}
               />
             </motion.div>
           ))}
