@@ -17,18 +17,20 @@ const HowItWorks = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.5, // Increased stagger for clearer sequential effect
+        delayChildren: 0.2, // Slight delay before starting card animations
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 60, scale: 0.95 }, // Added scale for pop effect
     visible: {
       opacity: 1,
       y: 0,
+      scale: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.8, // Slightly longer duration for smoother animation
         ease: easeOut,
       },
     },
@@ -110,7 +112,7 @@ const HowItWorks = () => {
             <motion.div
               key={step.id}
               variants={itemVariants}
-              className="w-full max-w-[280px] mx-auto"
+              className="w-full max-w-[280px] mx-auto max-sm:my-7"
             >
               <HIWCard
                 title={step.title}
@@ -127,7 +129,7 @@ const HowItWorks = () => {
       <img
         src="/images/howitworks/line.png"
         alt="Line"
-        className="absolute bottom-0 left-0 w-full -z-10 max-sm:hidden"
+        className="absolute bottom-0 left-0 w-full -z-10 max-sm:hidden min-md:translate-y-[50%] min-md:rotate-z-10 min-md:scale-[0.7] min-md:scale-x-110"
       />
     </div>
   );
