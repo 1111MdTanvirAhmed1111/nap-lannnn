@@ -161,7 +161,7 @@ const Hero = () => {
                                    </div>
                               </div>
 
-                              <div className="absolute flex items-center gap-2 sm:gap-3 md:gap-4 w-[120px] bg-white shadow-[12px_20px_30px_rgba(4,65,36,0.1)]">
+                              <div className="absolute flex items-center gap-2 sm:gap-3 md:gap-4 w-[120px] max-sm:scale-[0.9] bg-white shadow-[12px_20px_30px_rgba(4,65,36,0.1)] max-sm:-translate-y-5">
                                    <div className="relative w-full h-full p-3 sm:p-4 md:p-5 lg:p-6">
                                         <div className="absolute w-8 sm:w-10 md:w-12 lg:w-14 h-8 sm:h-10 md:h-12 lg:h-14 top-0 left-0 -translate-x-1/4 -translate-y-1/4 bg-[#FFA558] shadow-[inset_0px_-4px_4px_rgba(0,0,0,0.25),inset_0px_0px_4px_rgba(255,255,255,0.5)] rounded-full hidden sm:flex items-center justify-center">
                                              <img
